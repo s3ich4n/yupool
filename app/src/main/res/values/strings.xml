@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">YuPool</string>
+    <string name="use_list">여정 내역</string>
+    <string name="pool_list">등록된 카풀</string>
+    <string name="register_driver">드라이버 등록하기</string>
+    <string name="SK_Key">e8af7b84-488d-3719-b8ae-27cf5a505fb1</string>
+    <string name="user_agent">Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="kakao_app_key">730bb2c61321a2f3c20b289bfe5bc3be</string>
+    <!-- 카카오 링크를 사용하기 위함 -->
+    <string name="kakaolink_host">kakaolink</string>
+    <string name="kakao_scheme">kakao730bb2c61321a2f3c20b289bfe5bc3be</string>
+
+
+</resources>

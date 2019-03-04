@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/scan_fragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/blur_back2">
+
+    <FrameLayout
+        android:background="#fae0a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="자동차운전면허증"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/city"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/city"/>
+        <EditText
+            android:textColorHint="#ff0000"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:hint="12"
+            android:maxLength="2"
+            android:id="@+id/num1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+     <TextView
+         android:textStyle="bold"
+         android:textScaleX="3"
+         android:textColor="#000000"
+         android:textAlignment="center"
+         android:text="-"
+         android:layout_width="30dp"
+         android:layout_height="wrap_content" />
+        <EditText
+            android:textColorHint="#ff0000"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:hint="123456"
+            android:maxLength="6"
+            android:id="@+id/num2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textScaleX="3"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:text="-"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColorHint="#ff0000"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:hint="78"
+            android:maxLength="2"
+            android:id="@+id/num3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:text="성            명 :"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/name"
+            android:singleLine="true"
+            android:textColorHint="#ff0000"
+            android:textAlignment="center"
+            android:hint="홍길동"
+            android:maxLength="6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:numeric="integer"
+            android:textColorHint="#ff0000"
+            android:id="@+id/jumin"
+            android:textAlignment="center"
+            android:hint="920714"
+            android:maxLength="6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textScaleX="3"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:text="-"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="1234567"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:textSize="15sp"
+            android:text="면     허     증 "
+
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15sp"
+            android:text="2010.10.01"
+
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:textSize="15sp"
+            android:text=" 갱  신  기  간 :"
+
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15sp"
+            android:text="~  2018.12.03"
+
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:textSize="15sp"
+            android:text=" 조             건:"
+
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="서울지방경찰청장"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_gravity="right|bottom"
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="130dp">
+
+            <EditText
+                android:id="@+id/secure"
+                android:textColorHint="#ff0000"
+                android:maxLength="6"
+                android:hint="123456"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:background="@drawable/stamp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </FrameLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/bmw"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="150dp" />
+    <Button
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/imageBT"
+        android:text="차량 사진등록하기"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:background="#817373"/>
+    </FrameLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/registerBT"
+        android:text="등록하기"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_blue_square"/>
+
+</LinearLayout>
+</LinearLayout>

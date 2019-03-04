@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/whie_square"
+    android:layout_height="120dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 이미지, 레이팅 바 -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <FrameLayout
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/icon_car3" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:ratingBarStyleSmall"
+                        android:progressTint="#ffe100"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:rating="5"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:gravity="center"
+                        android:layout_gravity="bottom|center_horizontal"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:text="출발"
+                            android:textSize="10sp"
+                            android:textColor="#ffffffff"
+                            android:background="@drawable/purple_round"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/from"
+                            android:textColor="#26182f"
+                            android:textSize="12sp"
+                            android:gravity="center_vertical"
+                            android:text="분당구 삼평동"
+                            android:ellipsize="marquee"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:textSize="10sp"
+                            android:textColor="#ffffffff"
+                            android:gravity="center"
+                            android:text="도착"
+                            android:background="@drawable/purple_round"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/to"
+                            android:textColor="#26182f"
+                            android:textSize="12sp"
+                            android:gravity="center_vertical"
+                            android:text="분당구 삼평동"
+                            android:ellipsize="marquee"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:text="시간"
+                            android:textSize="10sp"
+                            android:textColor="#ffffffff"
+                            android:background="@drawable/purple_round"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/time"
+                            android:textColor="#26182f"
+                            android:textSize="12sp"
+                            android:gravity="center_vertical"
+                            android:text="12월 30일 11시"
+                            android:ellipsize="marquee"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/icon_right_arraw"
+            android:layout_width="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

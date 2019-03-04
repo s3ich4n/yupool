@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@drawable/round_red_square"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="80dp"
+            android:paddingRight="30dp"
+            android:layout_height="80dp">
+
+            <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textColor="#ffffffff"
+                android:text="출발지"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fromNameTV"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:text="경산시 대동 영남대학교"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textColor="#ffffffff"
+                    android:text="도착지"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:id="@+id/toNameTV"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:text="경산시 옥곡동 252"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textColor="#ffffffff"
+                    android:text="출발시간"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/startDateTV"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:text="12월 31일 오후 6시"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+            android:background="@drawable/icon_car3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/regDateTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="11월 20일"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

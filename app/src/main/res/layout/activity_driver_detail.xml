@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/searchBar"
+                    android:background="#f7f7f7"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/icon_car3" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="center"
+                                    android:textColor="#3b3a3a"
+                                    android:id="@+id/fromBT"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/round_background"
+                                    android:text="승차지" />
+                                <Button
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="left"
+                                    android:background="@drawable/poi_departure_with_shadow_small"
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="center"
+                                    android:textColor="#3b3a3a"
+                                    android:id="@+id/toBT"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/round_background"
+                                    android:text="하차지" />
+                                <Button
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="left"
+                                    android:background="@drawable/poi_destination_with_shadow_small"
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/BTLayout"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:id="@+id/denyBT"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="#e1586a"
+                android:text="거절하기"
+                android:textColor="#ffffffff" />
+            <Button
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:id="@+id/acceptBT"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="#FF589DE1"
+                android:text="수락하기"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/BTLayout2"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/runBT"
+                android:background="#FF589DE1"
+                android:textColor="#ffffffff"
+                android:text="운행시작"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/callBT"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/finish_icon_call"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+        </FrameLayout>
+
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

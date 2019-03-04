@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "809803911533",
+    "project_id": "firebase-yupool"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809803911533:android:10f085f2baa603fe",
+        "android_client_info": {
+          "package_name": "com.cs2017.yupool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809803911533-5i2tcrmg4223q13fnoe9jc2ri26t4801.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Nvx_n5-5flToHdz8I9imugw0embzcis"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

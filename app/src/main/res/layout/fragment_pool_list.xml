@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/scan_fragment"
+    android:background="@drawable/blur_back2"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:background="#f7f7f7"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:weightSum="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:background="@drawable/round_background"
+            android:textColor="#464545"
+            android:textColorHint="#a3a0a0"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/searchET"
+            android:paddingLeft="20dp"
+            android:layout_weight="9"
+            android:hint="출발지 검색"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/searchBT"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="검색"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_blue_square"
+            android:layout_width="30dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ViewFlipper
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flipper">
+        <ListView
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/poolListView"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:background="@drawable/icon_current"
+                android:id="@+id/currentBT"
+                android:layout_margin="20dp"
+                android:layout_gravity="right|top"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </FrameLayout>
+
+    </ViewFlipper>
+
+        <LinearLayout
+            android:background="#ffffffff"
+            android:visibility="gone"
+            android:id="@+id/searchLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/resultTV"
+                android:paddingLeft="10dp"
+                android:textColor="#e64e4e"
+                android:text="검색 결과 "
+                android:layout_weight="0"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <ListView
+                android:background="#ffffffff"
+                android:id="@+id/searchListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffffff"
+            android:id="@+id/changeModBT"
+            android:text="지도뷰"
+            android:background="@drawable/round_red_square"
+            android:layout_gravity="right|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

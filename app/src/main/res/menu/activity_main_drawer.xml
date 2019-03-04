@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- android:icon="@drawable/room" -->
+    <item
+        android:id="@+id/guest"
+        android:title="게스트">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_poolList"
+                    android:title="@string/pool_list" />
+                <item
+                    android:id="@+id/nav_request"
+                    android:title="보낸 요청" />
+            </group>
+            </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/driver"
+        android:title="드라이버">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_receive"
+                    android:title="받은 요청" />
+                <item
+                    android:id="@+id/nav_regPool"
+                    android:title="카풀 등록하기" />
+                <item
+                    android:id="@+id/nav_register"
+                    android:title="@string/register_driver" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="커뮤니케이션">
+        <menu>
+            <item
+                android:id="@+id/nav_kakao"
+                android:title="카카오톡 공유하기" />
+            <item
+                android:id="@+id/nav_review"
+                android:title="리뷰 남기기" />
+            <item
+                android:id="@+id/nav_email"
+                android:title="개발자에게 문의하기" />
+        </menu>
+    </item>
+
+</menu>

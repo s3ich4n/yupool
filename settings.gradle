@@ -1,0 +1,1 @@
+include ':app', ':jsoup-1.9.2', ':json-simple-1.1.1', ':com.skp.Tmap_1.0.48'

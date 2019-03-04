@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="16dp"
+    tools:context=".UI.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Member Login"
+            android:textColor="#579ce1"/>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_background"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_id"/>
+
+
+            <EditText
+
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/id"
+                android:paddingLeft="10dp"
+                android:hint="학번을 입력하세요."
+                android:textColorHint="#b6b1b1"
+                android:background="#ffffff"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_background"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_pw"/>
+
+
+            <EditText
+
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:inputType="textPassword"
+                android:ems="20"
+                android:id="@+id/pw"
+                android:paddingLeft="10dp"
+                android:hint="비밀번호를 입력하세요."
+                android:textColorHint="#b6b1b1"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:background="#ffffff"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/login"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="로그인"
+            android:background="@drawable/round_blue_square"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/role"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="40dp">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/guest"
+                    android:text="게스트"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/driver"
+                    android:text="드라이버"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="자동 로그인"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/autoCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

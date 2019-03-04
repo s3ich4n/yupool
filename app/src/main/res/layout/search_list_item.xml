@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    app:layout_goneMarginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:weightSum="10"
+    android:layout_height="50dp">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/icon_location"
+        android:id="@+id/image"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/poiname"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="영남대학교 IT관"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/poiaddress"
+            android:paddingLeft="5dp"
+            android:text="경상북도 경산시 대동"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

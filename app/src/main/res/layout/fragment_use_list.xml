@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/scan_fragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noResultTV"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ea3b3b"
+            android:gravity="center"
+            android:text="이용 내역이 없습니다!"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/listLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/resultTV"
+                android:layout_marginLeft="20dp"
+                android:text="총 5 건의 이용내역"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/listView"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
